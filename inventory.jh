@@ -1,3 +1,7 @@
+
+//rror: In the relationship between RmInventory and Transfer, Transfer is not declared.
+//Error: In the relationship between RmInventory and Transfer, Transfer is not declared.
+
 entity RawMaterialOrder {
    pricePerUnit Double
    quantityUnit String
@@ -352,7 +356,7 @@ relationship ManyToMany {
 }
 
 relationship OneToMany {
-	RmInventory to Transfer
+	RmInventory to Transfers
     RmInventory to PurchaseOrder
     RmInventory to ConsumptionDetail
 }
